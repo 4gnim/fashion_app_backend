@@ -39,29 +39,41 @@ This is a backend API program that supports a Flutter-based e-commerce fashion a
    ```bash
    git clone https://github.com/4gnim/fashion-app-backend.git
    ```
-2. Navigate to the project directory:
+2. Create a new folder:
    ```bash
-   cd repo-name
+   mkdir new-folder-name
    ```
-3. Create and activate a virtual environment:
+3. Move the cloned repository into the new folder:
+   ```bash
+   mv fashion-app-backend new-folder-name/
+   ```
+4. Navigate to new folder:
+   ```bash
+   cd new-folder-name
+   ```
+5. Create and activate a virtual environment:
    ```bash
    python -m venv env
    source env/bin/activate  # for Linux/Mac
    env\Scripts\activate   # for Windows
    ```
-4. Install dependencies:
+6. Navigate to the project directory:
+   ```bash
+   cd fashion-app-backend
+   ```
+7. Install dependencies:
    ```bash
    pip install -r requirements.txt
    ```
-5. Start the Django project:
+8. Start the Django project:
    ```bash
    django-admin startproject backend .
    ```
-6. Run database migrations:
+9. Run database migrations:
    ```bash
    python manage.py migrate
    ```
-7. Start the server:
+10. Start the server:
    ```bash
    python manage.py runserver
    ```
